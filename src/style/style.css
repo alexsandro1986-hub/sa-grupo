@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'logo_header';
+    src: url('assets/fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    height: max-content;
+}
+
+body {
+    width: 100%;
+    background-color: #e2f3f5;
+}
+
+
+header {
+    left: 0;
+    top: 0;
+    
+    background-color: white;
+
+    width: 100%;
+    position: fixed;
+    height: 160px;
+    z-index: 10; 
+    /* Sobrepor todos os conteudos */
+   
+    /* Divindo em duas partes (cabeca e nav) */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-auto-flow: row;
+}
+
+
+#cabeca {
+
+    /* Separacao das divs (logo, pesquisa e botao) */
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    align-items: center;
+
+}
+
+#logo {
+
+    margin-left: 7%;
+}
+
+#spanLogo {
+    font-family: 'logo_header';
+    font-weight: 700;
+    font-size: 45px;
+    color: #2858ac;
+    color: #007065;
+
+}
+
+#barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pesquisa {
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid black;
+    padding-left: 7px;
+    height: 40px;
+    width: 50%;
+    box-shadow: 2px 6px 4px rgb(141, 138, 138);
+}
+
+#pesquisa::placeholder {
+    text-align: center;
+}
+
+#botao-perfil-div {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+}
+
+
+#botao-perfil {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+#botao-perfil:hover {
+    scale: 1.03;
+    transition: 200ms;
+    box-shadow: 1px 1px 2px 1px rgb(184, 184, 185);
+}
+
+#menu_profile {
+    height: 15px;
+}
+
+#marinheiro_profile {
+    height: 30px;
+}
+
+/* div dos icones dos barcos */
+nav {
+
+    box-sizing: border-box;
+    border-top: 1px solid rgb(99, 99, 99);
+    border-bottom: 1px solid rgb(99, 99, 99);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #e2f3f5;
+
+
+}
+
+a {
+    color: transparent;
+}
+
+#icons {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    height: 100%;
+
+}
+
+
+/* personalizando os icones dos barcos */
+.icons_filter {
+    height: 40px;
+    width: 40px;
+}
+
+.icons_filter:hover {
+    cursor: pointer;
+}
+
+
+.btn_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+}
+
+.btn_icons:hover {
+    scale: 1.1;
+    transition: 200ms;
+
+}
+
+main {
+
+    height: 1200px;
+    position: absolute;
+    top: 170px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: transparent;
+
+
+}
+
+.container {
+
+    width: 100%;
+    background-color: transparent;
+
+    /* Espaço das divs dos barcos; Separacao em 4 blocos(quadrados);*/
+    display: grid;
+    /* Altura das imagens */
+    grid-template-rows: 22% 22% 22% 22%;
+    row-gap: 5%;
+    /* Espaçamento linhas */
+
+
+}
+
+section {
+    display: grid;
+    /* Comprimento das imagens */
+    grid-template-columns: 18.5% 18.5% 18.5% 18.5% 18.5%;
+    column-gap: 1.5%;
+    /*Espaçamento colunas */
+
+}
+
+
+[id^='jet-ski'] {
+    border: none;
+    background-color: transparent;
+
+}
+
+[id^='iate'] {
+    border: none;
+    background-color: transparent;
+
+}
+
+[id^='veleiro'] {
+    border: none;
+    background-color: transparent;
+
+}
+
+[id^='lancha'] {
+    border: none;
+    background-color: transparent;
+
+    height: 100%;
+}
+
+.img_div {
+    height: 75%;
+}
+
+.img_barcos {
+    width: 100%;
+    height: 315px;
+
+    border-radius: 10px;
+
+}
+
+.info-text {
+    margin-top: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    height: 25%;
+    flex-direction: column;
+    padding: 0%;
+
+
+}
+
+.span_LocalBarco {
+    /* font-family:; */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.span_ModeloBarco {
+    font-size: 18px;
+
+}
+
+.span_DiasBarco {
+    font-size: 18px;
+    color: rgb(108, 107, 107);
+}
+
+.preco_div {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin-top: 4px;
+
+
+}
+
+.span_PrecoBarco {
+    font-size: 18px;
+}
+
+footer {
+    position: absolute;
+    top: 2100px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #296bdd;
+
+    z-index: 3;
+
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#containerPopup {
+    position: fixed;
+    display: none;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(15, 15, 15, 0.5);
+    /* background-color: red; */
+    backdrop-filter: blur(1px);
+    /* -webkit-backdrop-filter: blur(12px); */
+}
+
+.fundoPopup {
+    position: fixed;
+    top: 15%;
+    right: 25%;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     z-index: 10;
+    width: 50%;
+    height: 700px;
+
+}
+
+iframe{
+    width: 970px;
+    height: 150%;
+    border: none;
+    
+
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #151414;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 130px 0;
+  }
+  
+  #footer h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+    font-size: 25px;
+    display: inline-block;
+    background: #048df5;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background: #048df5;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+   margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  #footer .credits {
+    font-size: 15px;
+  }
+  

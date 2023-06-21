@@ -179,11 +179,11 @@ a {
 
 main {
 
-    height: 1200px;
+   
     position: absolute;
     top: 170px;
 
-    margin-left: 30px;
+    margin-left: 55px;
     margin-right: 30px;
     /* background-color: rgb(255, 255, 255); */
     background-color: transparent;
@@ -199,7 +199,7 @@ main {
     /* Espaço das divs dos barcos; Separacao em 4 blocos(quadrados);*/
     display: grid;
     /* Altura das imagens */
-    grid-template-rows: 22% 22% 22% 22%;
+    grid-template-rows: 23% 23% 23% 23%;
     row-gap: 5%;
     /* Espaçamento linhas */
 
@@ -212,7 +212,7 @@ section {
     grid-template-columns: 18.5% 18.5% 18.5% 18.5% 18.5%;
     column-gap: 1.5%;
     /*Espaçamento colunas */
-    scroll-margin-top:160px;
+    scroll-margin-top:170px;
 }
 
 
